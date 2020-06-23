@@ -1,0 +1,16 @@
+{
+  "name": "noop-universal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browser": {
+    "./index.js": "noop-javascript",
+    "./sub.js": "noop-javascript/sub"
+  },
+  "dependencies": {
+    "noop-native": "file:../noop-native",
+    "noop-javascript": "file:../noop-javascript"
+  },
+  "author": "",
+  "license": "ISC"
+}

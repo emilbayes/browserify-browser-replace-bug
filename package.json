@@ -1,0 +1,17 @@
+{
+  "name": "browserify-browser-replace-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "noop-universal": "file:./noop-universal"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.1"
+  },
+  "scripts": {
+    "test": "browserify index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
