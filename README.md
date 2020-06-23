@@ -18,6 +18,17 @@ Excerpt from `noop-universal/package.json`:
 }
 ```
 
+## Use-case
+
+This is for `sodium-universal`, which wraps `sodium-javascript` and
+`sodium-native`. `sodium-native` is a large native dependency, which it doesn't
+make sense to split up. However to create minimal bundles in the browser,
+`sodium-javascript` is modular. Being able to have a single module that exposes
+both, and being able to automatically use either depending on context, comes
+from `sodium-universal`, which mirrors `sodium-javascript`, but exports
+`sodium-native` for Node.js usage. In the browser it should replace itself with
+the relevant submodules from `sodium-javascript`.
+
 ## Dependency tree
 
 The fictional packages are installed as `file:` dependencies here, making the
